@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            {% block title %}Seán Stickle | Nonprofits + Technology{% endblock %}
+        </title>
+        <meta charset="utf-8"/>
+        {% if description %}
+            <meta name="description" content="{{description}}"/>
+        {% endif %}
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+        <link rel="stylesheet" href="/css/main.css?v={% version %}"/>
+        {% block head %}{% endblock %}
+    </head>
+
+    <body class="bg-white">
+
+        {% include "_header.njk" %}
+
+        <main class="max-w-3xl mx-auto mt-8 px-4">
+            {% block content %}
+                {{ content | safe }}
+            {% endblock %}
+        </main>
+
+        {% include "_footer.njk" %}
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+article section {
+  @apply space-y-6;
+  @apply text-lg;
+  @apply text-gray-800;
+}
+
+article section ul {
+  @apply list-disc;
+  @apply pl-4;
+  @apply space-y-4;
+}
+
+article section ol {
+  @apply list-decimal;
+  @apply pl-8;
+  @apply space-y-4;
+}
+
+article section h2 {
+  @apply text-3xl;
+  @apply font-bold;
+}
+
+article section a {
+  @apply underline;
+  @apply text-blue-800;
+}

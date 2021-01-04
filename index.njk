@@ -1,0 +1,18 @@
+---
+pagination:
+  data: collections.post
+  size: 10
+  reverse: true
+  alias: posts
+---
+
+{% extends "_includes/default.njk" %}
+
+{% block content %}
+  {%- for post in posts -%}
+    {% include "_post.njk" %}
+    {% if not loop.last %}
+      <hr class="h-0 border-t my-12">
+    {% endif %}
+  {%- endfor -%}
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "default.njk" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <article>
+        <header>
+            <h1 class="text-4xl font-bold leading-none">{{ title }}</h1>
+            {% if subhed %}
+                <div class="text-2xl text-gray-500 mt-1">{{ subhed }}</div>
+            {% endif %}
+            <div class="text-base text-gray-500 mt-3">
+                {{ date | dateformat }}
+            </div>
+        </header>
+
+        <section class="mt-6">
+            {{ content | safe }}
+        </section>
+    </article>
+{% endblock %}

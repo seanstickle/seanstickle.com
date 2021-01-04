@@ -1,0 +1,10 @@
+# Generated output
+_site/
+_tmp/
+
+# Mac files
+.DS_Store
+
+# Node stuff
+node_modules/
+package-lock.json

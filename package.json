@@ -1,0 +1,23 @@
+{
+  "name": "seanstickle.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve & postcss css/tailwind.css --o _site/css/main.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production postcss css/tailwind.css --o _site/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-img": "^0.7.0",
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.0.0",
+    "postcss-cli": "^8.3.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "tailwindcss": "^2.0.2"
+  }
+}

@@ -1,0 +1,18 @@
+{% extends "default.njk" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+
+    <article class="mt-6 font-sans">
+        <header>
+            <h1 class="text-4xl font-bold leading-none">{{ title }}</h1>
+        </header>
+        <section class="mt-6">
+            {{ content | safe }}
+        </section>
+    </article>
+
+{% endblock %}
