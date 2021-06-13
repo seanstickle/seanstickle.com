@@ -3,7 +3,7 @@ title: Launching the new site, with big plans
 subhed: ...even though planning in 2021 is fraught with risk
 author: Seán Stickle
 date: "2021-01-04"
-permalink: posts/launching-the-new-seanstickle-dot-com/index.html
+permalink: posts/launching-the-new-seanstickle-dot-com
 tags: [post, news]
 ---
 
